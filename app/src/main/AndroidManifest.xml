@@ -2,14 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.zhaoliang5156.jddemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
     <application
+        android:name=".app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.customview.CustomViewActivity" />
+        <activity
+            android:name=".activity.customview.CustomView2Activity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.testxutils.XUtilsDemoActivity" />
+        <activity android:name=".activity.zxing.ZxingActivity" />
+        <activity android:name=".activity.okhttp.OKHttpActivity" />
+        <activity android:name=".activity.mvpaccount.AccountActivity" />
+        <activity android:name=".activity.mvpv2account.AccountActivityv2" />
+        <activity android:name=".activity.crashhandler.TestUnCrashExceptionActivity" />
+        <activity android:name=".activity.crashhandler.ErrorExitActivity">
+            <intent-filter>
+                <action android:name="cn.zhaoliang5156.jddemo.errorexit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.bugly.TextBuglyActivity"></activity>
+        <activity android:name=".activity.logger.TestLoggerActivity">
+        </activity>
+        <activity android:name=".activity.leakcanary.LeakcanaryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

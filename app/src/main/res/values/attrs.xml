@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义属性 -->
+    <declare-styleable name="MySearchView">
+        <attr name="search_hint" format="string" />
+    </declare-styleable>
+
+    <!-- 自定义加减号属性 -->
+    <declare-styleable name="MinusAndAddView">
+        <attr name="shop_num" format="integer" />
+    </declare-styleable>
+</resources>

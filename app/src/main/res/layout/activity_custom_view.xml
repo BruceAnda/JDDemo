@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.customview.CustomViewActivity">
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MySearchView
+        android:id="@+id/jd_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:search_hint="国庆大减价" />
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MinusAndAddView
+        android:id="@+id/shop_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shop_num="8" />
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MinusAndAddView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shop_num="8" />
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MinusAndAddView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shop_num="8" />
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MinusAndAddView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shop_num="8" />
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MinusAndAddView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shop_num="8" />
+
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
