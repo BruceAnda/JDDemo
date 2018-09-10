@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.zhaoliang5156.jddemo.activity.customview.widget.MySearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<cn.zhaoliang5156.jddemo.activity.customview.widget.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:height_space="20dp"
+        app:width_space="20dp" />-->
+    <!--<cn.zhaoliang5156.jddemo.activity.customview.widget.FlowLayout2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:height_space2="20dp"
+        app:width_space2="20dp" />-->
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:padding="10dp"
+        android:id="@+id/flow_layout"
+        app:flChildSpacing="auto"
+        app:flRowSpacing="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+

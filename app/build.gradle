@@ -30,29 +30,29 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
     /* Xutils */
     implementation 'org.xutils:xutils:3.5.0'
     /* OKHttp */
     implementation 'com.squareup.okhttp3:okhttp:3.11.0'
     /* okHttp LoggerInterceptor */
-    implementation group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: '3.11.0'
-
-
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
     implementation project(':zxing')
-
     /* Bugly */
     implementation 'com.tencent.bugly:crashreport:latest.release'
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
     implementation 'com.tencent.bugly:nativecrashreport:latest.release'
     //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
-
     /* Logger */
     implementation 'com.orhanobut:logger:2.2.0'
-
     /* leakcanary */
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
     // Optional, if you use support library fragments:
     debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.1'
+    /* flowlayout */
+    implementation 'com.nex3z:flow-layout:1.2.2'
+    /* umeng 统计 */
+    /*  implementation 'com.umeng.sdk:common:1.5.0'
+        implementation 'com.umeng.sdk:analytics:7.5.0'*/
+    implementation project(':UMLibrary')
 }
