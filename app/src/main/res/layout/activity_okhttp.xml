@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_sync_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同步get" />
+
+    <Button
+        android:id="@+id/btn_async_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="异步get" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户名" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码" />
+
+    <Button
+        android:id="@+id/btn_sync_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同步post" />
+
+    <Button
+        android:id="@+id/btn_async_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="异步post" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="5sp" />
+</LinearLayout>
