@@ -2,6 +2,7 @@ package cn.zhaoliang5156.jddemo.activity.recycleview.itemactivity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
@@ -16,6 +17,10 @@ import java.util.List;
 
 import cn.zhaoliang5156.jddemo.R;
 import cn.zhaoliang5156.jddemo.activity.recycleview.adapter.WaterfallAdapter;
+import jp.wasabeef.recyclerview.animators.FadeInRightAnimator;
+import jp.wasabeef.recyclerview.animators.LandingAnimator;
+import jp.wasabeef.recyclerview.animators.ScaleInBottomAnimator;
+import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
 /**
  * 这个节目学习瀑布流 和添加 删除 item动画
@@ -31,6 +36,7 @@ public class SecondActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
 
     private List<String> datas;
+    private WaterfallAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +52,13 @@ public class SecondActivity extends AppCompatActivity {
 
         // 瀑布流操作
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
-        recyclerView.setAdapter(new WaterfallAdapter(this, datas));
+        adapter = new WaterfallAdapter(this, datas);
+        recyclerView.setAdapter(adapter);
+
+        // 给RecycleView item 添加动画
+       // recyclerView.setItemAnimator(new DefaultItemAnimator());
+        //recyclerView.setItemAnimator(new SlideInUpAnimator());
+        recyclerView.setItemAnimator(new FadeInRightAnimator());
     }
 
     @Event({R.id.btn_add, R.id.btn_delete})
@@ -62,10 +74,12 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void delete() {
-
+        datas.remove(5);
+        adapter.notifyItemRemoved(5);
     }
 
     private void add() {
-
+        datas.add(5, "猪八戒");
+        adapter.notifyItemInserted(5);
     }
 }

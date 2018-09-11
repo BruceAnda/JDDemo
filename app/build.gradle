@@ -58,4 +58,7 @@ dependencies {
 
     /* RecycleView */
     implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    /* recycleview animators */
+    implementation 'jp.wasabeef:recyclerview-animators:2.3.0'
 }
