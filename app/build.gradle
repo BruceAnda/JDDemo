@@ -53,6 +53,9 @@ dependencies {
     implementation 'com.nex3z:flow-layout:1.2.2'
     /* umeng 统计 */
     /*  implementation 'com.umeng.sdk:common:1.5.0'
-        implementation 'com.umeng.sdk:analytics:7.5.0'*/
+            implementation 'com.umeng.sdk:analytics:7.5.0'*/
     implementation project(':UMLibrary')
+
+    /* RecycleView */
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
 }
