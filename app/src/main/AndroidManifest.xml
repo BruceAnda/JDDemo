@@ -9,6 +9,9 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_LOGS" />
 
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:name=".app.App"
         android:allowBackup="true"
@@ -39,9 +42,7 @@
         <activity android:name=".activity.logger.TestLoggerActivity" />
         <activity android:name=".activity.leakcanary.LeakcanaryActivity" />
         <activity android:name=".activity.customview.FlowLayoutActivity" />
-        <activity android:name=".activity.umeng.UmengAnalyticsActivity">
-
-        </activity>
+        <activity android:name=".activity.umeng.UmengAnalyticsActivity" />
 
         <!-- share  start -->
         <activity
@@ -176,16 +177,37 @@
             android:launchMode="singleTask"
             android:exported="true"/>
         -->
-        <activity android:name=".activity.recycleview.RecycleViewDemoActivity">
+        <activity android:name=".activity.recycleview.RecycleViewDemoActivity" />
+        <activity android:name=".activity.recycleview.itemactivity.FirstActivity" />
+        <activity android:name=".activity.recycleview.itemactivity.SecondActivity" />
+        <activity android:name=".activity.recycleview.itemactivity.ThirdActivity" />
+        <activity android:name=".activity.animation.AnimationActivity" />
+        <activity android:name=".activity.animation.item.FrameAnimationActivity" />
+        <activity android:name=".activity.animation.item.TweenAnimationActivity" />
+        <activity android:name=".activity.animation.item.PropertyAnimationActivity" />
+        <activity android:name=".activity.okhttp.interceptor.InterceptorActivity" />
+
+        <service
+            android:name=".activity.service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+
+        <activity android:name=".activity.map.MapActivity"></activity>
+
+        <!-- 高的地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="beacb768e2319ca623a5128742d6c871" />
+
+        <activity android:name=".activity.search.GaoDeSearchActivity"></activity>
+        <activity android:name=".activity.shopcard.ShopCartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.recycleview.itemactivity.FirstActivity" />
-        <activity android:name=".activity.recycleview.itemactivity.SecondActivity" />
-        <activity android:name=".activity.recycleview.itemactivity.ThirdActivity"></activity>
     </application>
 
 </manifest>

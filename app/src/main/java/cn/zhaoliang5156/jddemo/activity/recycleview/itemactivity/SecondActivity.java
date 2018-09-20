@@ -1,11 +1,14 @@
 package cn.zhaoliang5156.jddemo.activity.recycleview.itemactivity;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
+
+import com.zrq.divider.Divider;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -56,9 +59,14 @@ public class SecondActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         // 给RecycleView item 添加动画
-       // recyclerView.setItemAnimator(new DefaultItemAnimator());
+        // recyclerView.setItemAnimator(new DefaultItemAnimator());
         //recyclerView.setItemAnimator(new SlideInUpAnimator());
         recyclerView.setItemAnimator(new FadeInRightAnimator());
+
+        recyclerView.addItemDecoration(Divider.builder()
+                .color(android.R.color.darker_gray)
+                .width(50)
+                .height(50).build());
     }
 
     @Event({R.id.btn_add, R.id.btn_delete})

@@ -1,0 +1,41 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = "flowlayout"                               // Maven Group ID for the artifact
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'flowlayout'
+                artifactId 'flowlayout'
+
+                // Add your description here
+                name 'flowlayout'
+                description 'a library for flowlayout'
+                url 'https://github.com/BruceAnda/JDDemo'
+
+                // Set your license
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'ict'
+                        name 'ict'
+                        email 'zhaoliang5156@gmail.com'
+                    }
+                }
+                scm {
+                    connection 'https://github.com/BruceAnda/JDDemo.git'
+                    developerConnection 'https://github.com/BruceAnda/JDDemo.git'
+                    url 'https://github.com/BruceAnda/JDDemo'
+                }
+            }
+        }
+    }
+}

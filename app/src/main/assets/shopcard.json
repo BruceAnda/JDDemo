@@ -1,0 +1,66 @@
+{
+  "message": "查询成功",
+  "status": "200",
+  "result": [
+    {
+      "shopId": 2,//店铺
+      "shopName": null,//店铺名称
+      "cartlist": [//购物车商品
+        {
+          "id": 2,//购物车
+          "shopId": 2,
+          "shopName": null,
+          "defaultPic": "111.jpg",//默认略缩图
+          "productId": 2,//商品
+          "productName": null,//商品名称
+          "color": null,//颜色
+          "size": null,//尺寸
+          "price": null,//单价
+          "count": null //数量
+        },
+        {
+          "id": 2,//购物车
+          "shopId": 2,
+          "shopName": null,
+          "defaultPic": "111.jpg",//默认略缩图
+          "productId": 2,//商品
+          "productName": null,//商品名称
+          "color": null,//颜色
+          "size": null,//尺寸
+          "price": null,//单价
+          "count": null //数量
+        }
+      ]
+    },
+    {
+      "shopId": 2,//店铺
+      "shopName": null,//店铺名称
+      "cartlist": [//购物车商品
+        {
+          "id": 2,//购物车
+          "shopId": 2,
+          "shopName": null,
+          "defaultPic": "111.jpg",//默认略缩图
+          "productId": 2,//商品
+          "productName": null,//商品名称
+          "color": null,//颜色
+          "size": null,//尺寸
+          "price": null,//单价
+          "count": null //数量
+        },
+        {
+          "id": 2,//购物车
+          "shopId": 2,
+          "shopName": null,
+          "defaultPic": "111.jpg",//默认略缩图
+          "productId": 2,//商品
+          "productName": null,//商品名称
+          "color": null,//颜色
+          "size": null,//尺寸
+          "price": null,//单价
+          "count": null //数量
+        }
+      ]
+    }
+  ]
+}

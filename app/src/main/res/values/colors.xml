@@ -3,4 +3,18 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!--背景颜色-->
+    <color name="background_color">#f6f6f6</color>
+
+    <!--分割线-->
+    <color name="splitline_color">#dddddd</color>
+
+    <!--文字-->
+    <color name="main_red_text">#e53e42</color>
+    <color name="main_white_text">#ffffff</color>
+
+    <!--图标-->
+    <color name="default_icon_color">#999999</color>
+    <color name="pressed_icon_color">#e53e42</color>
 </resources>

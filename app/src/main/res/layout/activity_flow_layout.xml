@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <!--<cn.zhaoliang5156.jddemo.activity.customview.widget.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!--<cn.zhaoliang5156.flowlayout.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/flow_layout"
         android:layout_width="match_parent"

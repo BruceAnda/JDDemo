@@ -10,12 +10,6 @@
         <attr name="shop_num" format="integer" />
     </declare-styleable>
 
-    <!-- 流式布局 -->
-    <declare-styleable name="FlowLayout">
-        <attr name="width_space" format="dimension" />
-        <attr name="height_space" format="dimension" />
-    </declare-styleable>
-
     <!-- 流式布局自定义属性 -->
     <declare-styleable name="FlowLayout2">
         <attr name="width_space2" format="dimension" />

@@ -3,6 +3,7 @@ package cn.zhaoliang5156.jddemo.app;
 import android.app.Application;
 import android.os.StrictMode;
 
+import com.igexin.sdk.PushManager;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;
@@ -15,6 +16,7 @@ import org.xutils.x;
 
 import cn.zhaoliang5156.jddemo.R;
 import cn.zhaoliang5156.jddemo.activity.crashhandler.CrashHandler;
+import cn.zhaoliang5156.jddemo.activity.service.PushService;
 
 /**
  * 自定义Application
@@ -38,7 +40,22 @@ public class App extends Application {
         // install leakcanary
         installLeakcanary();
 
+        /* 初始化友盟 */
         initUmeng();
+
+        /* 初始化个推 */
+        initGetTui();
+    }
+
+    /**
+     * 初始化个推
+     *
+     * @author zhaoliang
+     * @version 1.0
+     * @create 2018/9/13
+     */
+    private void initGetTui() {
+        PushManager.getInstance().initialize(this.getApplicationContext(), PushService.class);
     }
 
     /**

@@ -1,1 +1,1 @@
-include ':app', ':zxing', ':UMLibrary'
+include ':app', ':zxing', ':UMLibrary', ':flowlayout'
